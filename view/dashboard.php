@@ -1,6 +1,6 @@
 <div class="content-body">
 <div class="container-fluid">
-<!-- Content goes here -->
+Gabby
 </div>
 </div>
 <?php @include('inc/footer.php');?>

@@ -25,6 +25,41 @@ return $lastid;
 	
 
 //search
+
+
+
+
+
+public function comp_details(){
+$data = array();
+$sql = "SELECT * FROM `tbl_companydetails` WHERE 1";
+$xconx = $this->conx();
+$results = mysqli_query($xconx, $sql);
+$count = mysqli_num_rows ($results);
+if ($count > 0) {
+while ($r = mysqli_fetch_assoc($results)) {
+$data[] = $r;
+}
+return $data;
+}
+}
+
+public function select_forlogins($id){
+$data = array();
+$sql = "SELECT * FROM `login_details` WHERE `phone_number`='".$id."'";
+$xconx = $this->conx();
+$results = mysqli_query($xconx, $sql);
+$count = mysqli_num_rows ($results);
+if ($count > 0) {
+while ($r = mysqli_fetch_assoc($results)) {
+$data[] = $r;
+}
+return $data;
+}
+}
+
+
+
 public function searchTransCode($val){
 $data = array();
 $sql = "SELECT * FROM `printed_summaries` WHERE `transaction_code` LIKE '%".$val."%' AND `void_status`<1";
