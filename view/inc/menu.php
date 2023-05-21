@@ -28,8 +28,38 @@
 </ul>
 </li>
 
+<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+<i class="fas fa-info-circle"></i>
+<span class="nav-text" >Students</span>
+</a>
+<ul aria-expanded="false">
+<li><a href="index.php?page=all-students">All Students</a></li>
+<li><a href="index.php?page=add-student">Add-Student</a></li>
+<!-- <li><a href="app-calender.html">Calendar</a></li> -->
+</ul>
+</li>
 
+<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+<i class="fas fa-info-circle"></i>
+<span class="nav-text">Teachers</span>
+</a>
+<ul aria-expanded="false">
+<li><a href="index.php?page=all-teachers">All Teachers</a></li>
+<li><a href="index.php?page=add-teacher">Add-Teacher</a></li>
+<!-- <li><a href="app-calender.html">Calendar</a></li> -->
+</ul>
+</li>
 
+<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+<i class="fas fa-info-circle"></i>
+<span class="nav-text">Parents</span>
+</a>
+<ul aria-expanded="false">
+<li><a href="index.php?page=all-parents">All Parents</a></li>
+<li><a href="index.php?page=add-parent">Add-Parent</a></li>
+<!-- <li><a href="app-calender.html">Calendar</a></li> -->
+</ul>
+</li>
 
 
 <li><a href="widget-basic.html" class="" aria-expanded="false">

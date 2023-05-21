@@ -1,16 +1,16 @@
 <?php @session_start(); ?>
 <?php 
 $message='';
-if (!isset($_SESSION['active_session'])) {
+// if (!isset($_SESSION['active_session'])) {
 @include('inc/header_login.php');
-}else if(isset($_SESSION['active_session_app_portal'])){
+// }else if(isset($_SESSION['active_session_app_portal'])){
 @include('inc/header_login.php');
-}else {
+// }else {
 @include('inc/header.php');
 @include('inc/menu.php');
 @include('../model/classController.php'); 
 $content = new crudOperation();
-}
+// }
 
 ?>
 
